@@ -7,9 +7,9 @@ uctodata provides datafiles for ucto for several languages
 
 uctodata is architecture independent.
 
-To install ucot with uctodata, first consult whether your distribution's
+To install uctodata, first consult whether your distribution's
 package manager has an up-to-date package.
-If not, for easy installation of frog and all dependencies, it is included
+If not, for easy installation of ucto and uctodata, it is included
 as part of our software distribution LaMachine:
 https://proycon.github.io/LaMachine .
 
