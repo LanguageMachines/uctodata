@@ -1,0 +1,6 @@
+prefix=@prefix@
+exec_prefix=@exec_prefix@
+
+Name: uctodata
+Version: @VERSION@
+Description: datafiles for ucto
