@@ -1,9 +1,9 @@
 # uctodata 0.1 CLST/ILK/CLiPS 1998 - 2016
 	 https://github.com/LanguageMachines/uctodata/
 
-documentation: https://languagemachines.github.io/ucto
+Website and documentation: https://languagemachines.github.io/ucto
 
-uctodata provides datafiles for ucto for several languages
+uctodata provides datafiles for the tokeniser ucto for several languages
 
 uctodata is architecture independent.
 
@@ -15,7 +15,7 @@ https://proycon.github.io/LaMachine .
 
 To compile and install manually from source instead:
 
- $ bash bootstrap.sh
- $ ./configure
- $ make
- $ make install
+    $ bash bootstrap.sh
+    $ ./configure
+    $ make
+    $ make install
