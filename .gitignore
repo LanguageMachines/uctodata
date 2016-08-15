@@ -1,0 +1,14 @@
+ChangeLog
+Makefile
+Makefile.in
+aclocal.m4
+autom4te.cache/
+config.log
+config.status
+config/Makefile
+config/Makefile.in
+configure
+install-sh
+missing
+*.tar.gz
+uctodata.pc
