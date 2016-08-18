@@ -5,24 +5,30 @@ URL URL-WWW URL-DOMAIN E-MAIL
 # BEGIN-TAG END-TAG
 ABBREVIATION-COMPOUND COMPOUND-ABBREVIATION
 QUOTE-COMPOUND WORD-COMPOUND NUMBER-COMPOUND
+#UNIT-COMPOUND
 NUMBER-STRING STRING-NUMBER
 WORD-PARPREFIX-PARSUFFIX WORD-PARPREFIX WORD-PARSUFFIX
-INITIALS ABBREVIATION INITIAL SMILEY REVERSE-SMILEY
+INITIALS ABBREVIATION
+#UNIT
+INITIAL SMILEY REVERSE-SMILEY
 ABBREVIATION-KNOWN PUNCTUATION-MULTI
 NUMBER-YEAR TIME FRACNUMBER NUMBER CURRENCY WORD PUNCTUATION UNKNOWN
-# to do PREFIXES (is leeg nu) UNITS (uitgecommentarieerd in de c++ code)
+# to do PREFIXES, SUFFIXES (beide leeg nu)
+#       UNITS (grotendeels uitgecommentarieerd in de c++ code)
 
 [META-RULES]
 SPLITTER=%
 NUMBER-ORDINAL = \p{N}+-?(?: %ORDINALS% )(?:\Z|\P{Lu}|\P{Ll})$
-#ABBREVIATION-KNOWN = (?:\p{P}*)?(?:\A|[^\p{L}\.])((?:%ABBREVIATIONS%)(?:\.|°\.|°))(?:\Z|\P{L})
 ABBREVIATION-KNOWN = (?:\p{P}*)?(?:\A|[^\p{L}\.])(?:\A)((?:%ABBREVIATIONS%)(?:\.{0,1}))(?:\Z|\P{L})
 WORD-TOKEN =(%TOKENS%)(?:\p{P}*)?$
 WORD-WITHPREFIX = (?:\A|[^\p{Lu}\.]|[^\p{Ll}\.])(?: %ATTACHEDPREFIXES% )\p{L}+
 WORD-WITHSUFFIX = ((?:\p{L}|\p{N}|-)+(?: %ATTACHEDSUFFIXES% ))(?:\Z)
 WORD-INFIX-COMPOUND = ((?:\p{L}|\p{N}|-)+(?: %ATTACHEDSUFFIXES% )-(?:\p{L}+))$
-PREFIX = (?:\A|[^\p{Lu}\.]|[^\p{Ll}\.])(%PREFIXES% )(\p{L}+)
-SUFFIX = ((?:\p{L})+)( %SUFFIXES% )(?:\Z|\P{L})
+
+#PREFIX = (?:\A|[^\p{Lu}\.]|[^\p{Ll}\.])(%PREFIXES% )(\p{L}+)
+#SUFFIX = ((?:\p{L})+)( %SUFFIXES% )(?:\Z|\P{L})
+#UNIT-COMPOUND = \p{N}+((?i: %UNITS% )(?:[./*=]{1})(?i: %UNITS% )(?:\p{P}{0,1}))$
+#UNIT = (?i)(?:\a|\P{L})( %UNITS% )(?:\z|\P{L})
 
 [RULES]
 %include url
@@ -109,6 +115,8 @@ QUOTE-SUFFIX=(\p{Lu}(?:\p{L})+(?:s['`’‘´]|x['`’‘´]))
 
 [PREFIXES]
 
+[SUFFIXES]
+
 [ATTACHEDSUFFIXES]
 \['`’‘´][sS]
 \['`’‘´][tT]
@@ -132,9 +140,11 @@ er|ER
 
 [UNITS]
 km
-m
 cm
+mmol
 mm
+mol
+m
 g
 kg
 C
