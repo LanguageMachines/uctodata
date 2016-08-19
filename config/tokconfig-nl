@@ -80,8 +80,8 @@ INITIALS=(\p{L}(?:\.\p{L})+\.)\p{Lu}\p{L}{3,999}+
 INITIAL=^(?:\p{Lt}|\p{Lu})\.$
 
 #Homogeneous punctuation (ellipsis etc)
-PUNCTUATION-MULTI-DOT=(?:\-|_|\*|=|!|[!\?]){2,}(\.)
-PUNCTUATION-MULTI=(?:\.|\-|_|\*|=|!|[!\?]){2,}
+PUNCTUATION-MULTI-DOT=(?:\-|_|\*|=|!|<|>|[!\?]){2,}(\.)
+PUNCTUATION-MULTI=(?:(?:\-|_|\*|=|!|<|>|[!\?]){2,})|(?:\.){2,}
 
 #Date
 DATE=\p{N}{1,2}-\p{N}{1,2}-\p{N}{2,4}
