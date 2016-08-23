@@ -33,8 +33,9 @@ WORD-INFIX-COMPOUND = ((?:\p{L}|\p{N}|-)+(?: %ATTACHEDSUFFIXES% )-(?:\p{L}+))$
 
 CURRENCY=^(\p{Sc}|%CURRENCY%)(?:\p{N}|\Z)
 
-#PREFIX = (?:\A|[^\p{Lu}\.]|[^\p{Ll}\.])(%PREFIXES% )(\p{L}+)
-#SUFFIX = ((?:\p{L})+)( %SUFFIXES% )(?:\Z|\P{L})
+PREFIX = (?:\A|[^\p{Lu}\.]|[^\p{Ll}\.])(%PREFIXES% )(\p{L}+)
+SUFFIX = ((?:\p{L})+)( %SUFFIXES% )(?:\Z|\P{L})
+
 #UNIT-COMPOUND = \p{N}+((?i: %UNITS% )(?:[./*=]{1})(?i: %UNITS% )(?:\p{P}{0,1}))$
 #UNIT = (?i)(?:\a|\P{L})( %UNITS% )(?:\z|\P{L})
 
