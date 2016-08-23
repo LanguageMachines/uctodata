@@ -246,7 +246,7 @@ feb
 febr
 fec
 fig
-fl
+#fl CURRENCY
 fol
 fr
 geb
@@ -474,7 +474,8 @@ za
 zelfst
 zg
 zgn
-zn
+zn\.
+# only accept zn as a abbrev when with dot.
 zog
 zw
 zwemb
