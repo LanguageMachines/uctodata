@@ -2,7 +2,6 @@
 GENITIVEPLACENAME WORD-WITHSUFFIX WORD-INFIX-COMPOUND QUOTE-SUFFIX
 WORD-DIMIN WORD-TOKEN NUMBER-ORDINAL DATE-REVERSE DATE
 URL URL-WWW URL-DOMAIN E-MAIL
-# BEGIN-TAG END-TAG
 ABBREVIATION-COMPOUND COMPOUND-ABBREVIATION
 QUOTE-COMPOUND WORD-COMPOUND NUMBER-COMPOUND
 #UNIT-COMPOUND
@@ -55,11 +54,6 @@ WORD-PARSUFFIX=\p{L}+(?:[\p{Pc}\p{Pd}]\p{L}+)*(?:[\p{Pc}\p{Pd}]?\p{Ps}[\p{Pc}\p{
 
 #Ex: baby'tje
 WORD-DIMIN=[\p{L}\p{N}]+['`’‘´]tjes{0,1}
-
-#tags like <start>, </finish> and </>
-#TAG=(?:[<\/|<][^>]+>[^<]*<[^>]+>)
-#BEGIN-TAG=(?:<[A-Za-z][^>]*>)
-#END-TAG=(?:</[^>]*>)
 
 #Keep dash/underscore connected parts (even if they are in parenthesis)
 WORD-COMPOUND=[\p{L}\p{N}]+(?:[\p{Pc}\p{Pd}][\p{L}\p{N}]+)+
