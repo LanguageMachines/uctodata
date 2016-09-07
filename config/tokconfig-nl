@@ -1,26 +1,43 @@
 [RULE-ORDER]
 GENITIVEPLACENAME WORD-WITHSUFFIX WORD-INFIX-COMPOUND QUOTE-SUFFIX
-WORD-DIMIN WORD-TOKEN ABBREVIATION-KNOWN NUMBER-ORDINAL DATE-REVERSE DATE
+WORD-DIMIN WORD-TOKEN NUMBER-ORDINAL DATE-REVERSE DATE
 URL URL-WWW URL-DOMAIN E-MAIL
 ABBREVIATION-COMPOUND COMPOUND-ABBREVIATION
 QUOTE-COMPOUND WORD-COMPOUND NUMBER-COMPOUND
+#UNIT-COMPOUND
+INITIAL
+ABBREVIATION
+SMILEY REVERSE-SMILEY
+ABBREVIATION-KNOWN
+CURRENCY
 NUMBER-STRING STRING-NUMBER
 WORD-PARPREFIX-PARSUFFIX WORD-PARPREFIX WORD-PARSUFFIX
-ABBREVIATION INITIALS INITIAL SMILEY REVERSE-SMILEY
+INITIALS
+#UNIT
+PUNCTUATION-MULTI-DOT
 PUNCTUATION-MULTI
-NUMBER-YEAR TIME FRACNUMBER NUMBER CURRENCY WORD PUNCTUATION UNKNOWN
-# to do PREFIXES (is leeg nu) UNITS (uitgecommentarieerd in de c++ code)
+NUMBER-YEAR TIME FRACNUMBER NUMBER  WORD PUNCTUATION UNKNOWN
+# to do PREFIXES, SUFFIXES (beide leeg nu)
+#       UNITS (grotendeels uitgecommentarieerd in de c++ code)
 
 [META-RULES]
 SPLITTER=%
 NUMBER-ORDINAL = \p{N}+-?(?: %ORDINALS% )(?:\Z|\P{Lu}|\P{Ll})$
-ABBREVIATION-KNOWN = (?:\p{P}*)?(?:\A|[^\p{L}\.])((?:%ABBREVIATIONS%)(?:\.|°\.|°))(?:\Z|\P{L})
+
+# the ^\p{S} prevents splitting <tag> like strings
+ABBREVIATION-KNOWN = (?:\p{P}*)?(?:\A|[^\p{L}\p{S}\.])((?:%ABBREVIATIONS%)(?:\.{0,1}))(?:\Z|\P{L})
 WORD-TOKEN =(%TOKENS%)(?:\p{P}*)?$
-WORD-WITHPREFIX = (?:\A|[^\p{Lu}\.]|[^\p{Ll}\.])(?: %ATTACHEDPREFIXES% )\p{L}+
+#WORD-WITHPREFIX = (?:\A|[^\p{Lu}\.]|[^\p{Ll}\.])(?: %ATTACHEDPREFIXES% )\p{L}+
 WORD-WITHSUFFIX = ((?:\p{L}|\p{N}|-)+(?: %ATTACHEDSUFFIXES% ))(?:\Z)
 WORD-INFIX-COMPOUND = ((?:\p{L}|\p{N}|-)+(?: %ATTACHEDSUFFIXES% )-(?:\p{L}+))$
+
+CURRENCY=^(\p{Sc}|%CURRENCY%)(?:\p{N}|\Z)
+
 PREFIX = (?:\A|[^\p{Lu}\.]|[^\p{Ll}\.])(%PREFIXES% )(\p{L}+)
 SUFFIX = ((?:\p{L})+)( %SUFFIXES% )(?:\Z|\P{L})
+
+#UNIT-COMPOUND = \p{N}+((?i: %UNITS% )(?:[./*=]{1})(?i: %UNITS% )(?:\p{P}{0,1}))$
+#UNIT = (?i)(?:\a|\P{L})( %UNITS% )(?:\z|\P{L})
 
 [RULES]
 %include url
@@ -61,7 +78,8 @@ INITIALS=(\p{L}(?:\.\p{L})+\.)\p{Lu}\p{L}{3,999}+
 INITIAL=^(?:\p{Lt}|\p{Lu})\.$
 
 #Homogeneous punctuation (ellipsis etc)
-PUNCTUATION-MULTI=(?:\.|\-|[!\?]){2,}
+PUNCTUATION-MULTI-DOT=(?:\-|_|\*|=|!|<|>|[!\?]){2,}(\.)
+PUNCTUATION-MULTI=(?:(?:\-|_|\*|=|!|<|>|[!\?]){2,})|(?:\.){2,}
 
 #Date
 DATE=\p{N}{1,2}-\p{N}{1,2}-\p{N}{2,4}
@@ -90,8 +108,6 @@ NUMBER=-?(?:[\.,]?\p{N}+)+
 #'s-Gravenhage, 's-Hertogenbosch
 GENITIVEPLACENAME=['`’‘´][sS]-\p{Lu}\p{L}+
 
-CURRENCY=\p{Sc}
-
 WORD=[\p{L}\p{Mn}\-]+
 
 PUNCTUATION=\p{P}
@@ -101,6 +117,8 @@ UNKNOWN=.
 QUOTE-SUFFIX=(\p{Lu}(?:\p{L})+(?:s['`’‘´]|x['`’‘´]))
 
 [PREFIXES]
+
+[SUFFIXES]
 
 [ATTACHEDSUFFIXES]
 \['`’‘´][sS]
@@ -125,9 +143,11 @@ er|ER
 
 [UNITS]
 km
-m
 cm
+mmol
 mm
+mol
+m
 g
 kg
 C

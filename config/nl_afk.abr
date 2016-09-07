@@ -70,7 +70,7 @@ It
 J-P
 Jac
 Jacq
-Jan
+Jan\.
 Jhr
 Jkvr
 Joh
@@ -99,6 +99,7 @@ Ms
 Mus
 Mw
 N°s
+N°\.
 N°
 N
 NH
@@ -179,7 +180,7 @@ atm
 aug
 beh
 beheerscomm
-ben
+ben\.
 benod
 betr
 bijv
@@ -221,7 +222,7 @@ dipl
 dir
 distr
 div
-do
+do\.
 don
 dr
 drs
@@ -245,7 +246,7 @@ feb
 febr
 fec
 fig
-fl
+#fl CURRENCY
 fol
 fr
 geb
@@ -335,6 +336,7 @@ muz
 mv
 mw
 n°s
+n°\.
 n°
 n
 nav
@@ -472,7 +474,8 @@ za
 zelfst
 zg
 zgn
-zn
+zn\.
+# only accept zn as a abbrev when with dot.
 zog
 zw
 zwemb
