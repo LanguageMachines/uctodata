@@ -1,2 +1,7 @@
+0.2 [Ko vd Sloot] 28-09-2016
+  * New implementation of rules. Needs a recent ucto that supports recursive
+    application of rules
+  * lots of bug fixes. Most notably in CURRENCY, ABBREV, SUFFIX and PREFIX rules
+
 0.1 [Ko vd Sloot] 30-06-2016
   * first version of a separate data package for ucto
