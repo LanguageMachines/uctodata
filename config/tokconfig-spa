@@ -91,7 +91,7 @@ kb
 EUR
 
 [ABBREVIATIONS]
-%include es
+%include spa
 
 [EOSMARKERS]
 %include standard-eos

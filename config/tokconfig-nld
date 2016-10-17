@@ -169,7 +169,7 @@ f
 
 
 [ABBREVIATIONS]
-%include nl_afk
+%include nld_afk
 
 [FILTER]
 %include ligatures

@@ -116,7 +116,7 @@ kb
 EUR
 
 [ABBREVIATIONS]
-%include pt
+%include por
 
 [EOSMARKERS]
 %include standard-eos
