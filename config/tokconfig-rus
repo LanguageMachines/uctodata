@@ -1,3 +1,4 @@
+version=0.2
 # coding: utf-8
 [RULE-ORDER]
 URL URL-WWW URL-DOMAIN
