@@ -41,7 +41,6 @@
     skos:member <#TIME> ;
     skos:member <#FRACNUMBER> ;
     skos:member <#NUMBER> ;
-    skos:member <#> ;
     skos:member <#WORD> ;
     skos:member <#PUNCTUATION> ;
     skos:member <#UNKNOWN> ;
@@ -190,10 +189,6 @@
 <#NUMBER>
     a skos:Concept ;
     skos:notation "NUMBER" .
-
-<#>
-    a skos:Concept ;
-    skos:notation "" .
 
 <#WORD>
     a skos:Concept ;

@@ -25,7 +25,7 @@ for configfile in glob.glob('config/tokconfig*'):
                 elif line and line[0] == '[':
                     break #done
                 elif inruleorder:
-                    rules += line.split(' ')
+                    rules += [ rule.strip() for rule in line.split(' ') if rule.strip() ]
 
     if not rules:
         print("No rules found, not creating any set", file=sys.stderr)
