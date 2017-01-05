@@ -1,3 +1,6 @@
+0.3 [Ko vd Sloot] 05-01-2017
+  * new direcory structure an filenames based on ISO 693-3 language codes.
+
 0.2 [Ko vd Sloot] 28-09-2016
   * New implementation of rules. Needs a recent ucto that supports recursive
     application of rules
