@@ -12,7 +12,7 @@ EXTRA_DIST = $(config_DATA)
 
 install-data-hook:
 # for backward compatability add symlinks with 'historical' names
-	cd $(configdir) && \
+	cd $(DESTDIR)$(configdir) && \
 	$(LN_S) -f tokconfig-eng tokconfig-en && \
 	$(LN_S) -f tokconfig-deu tokconfig-de && \
 	$(LN_S) -f tokconfig-nld tokconfig-nl && \
