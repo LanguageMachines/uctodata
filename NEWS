@@ -1,3 +1,8 @@
+0.3.1 [Ko van der Sloot] 06-01-2017
+Bug fix release:
+ * fixed install problem in debian packaging using DESTDIR
+ * cleaned all rules from 'empty' entries (which lead to warnings)
+
 0.3 [Ko vd Sloot] 05-01-2017
   * new direcory structure an filenames based on ISO 693-3 language codes.
 
