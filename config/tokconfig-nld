@@ -28,14 +28,13 @@ NUMBER-ORDINAL = \p{N}+-?(?i)(?: %ORDINALS% )(?:\Z|\P{Lu}|\P{Ll})$
 # the ^\p{S} prevents splitting <tag> like strings
 ABBREVIATION-KNOWN = (?:\p{P}*)?(?:\A|[^\p{L}\p{S}\.])((?:%ABBREVIATIONS%)(?:\.{0,1}))(?:\Z|\P{L})
 WORD-TOKEN =(?i)(%TOKENS%)(?:\p{P}*)?$
-#WORD-WITHPREFIX = (?:\A|[^\p{Lu}\.]|[^\p{Ll}\.])(?: %ATTACHEDPREFIXES% )\p{L}+
 WORD-WITHSUFFIX = ((?:\p{L}|\p{N}|-)+(?i)(?: %ATTACHEDSUFFIXES% ))(?:\Z)
 WORD-INFIX-COMPOUND = ((?:\p{L}|\p{N}|-)+(?i)(?: %ATTACHEDSUFFIXES% )-(?:\p{L}+))$
 
 CURRENCY=^(\p{Sc}|%CURRENCY%)(?:\p{N}|\Z)
 
-PREFIX = (?:\A|[^\p{Lu}\.]|[^\p{Ll}\.])(%PREFIXES% )(\p{L}+)
-SUFFIX = ((?:\p{L})+)( %SUFFIXES% )(?:\Z|\P{L})
+#PREFIX = (?:\A|[^\p{Lu}\.]|[^\p{Ll}\.])(%PREFIXES% )(\p{L}+)
+#SUFFIX = ((?:\p{L})+)( %SUFFIXES% )(?:\Z|\P{L})
 
 #UNIT-COMPOUND = \p{N}+((?i: %UNITS% )(?:[./*=]{1})(?i: %UNITS% )(?:\p{P}{0,1}))$
 #UNIT = (?i)(?:\a|\P{L})( %UNITS% )(?:\z|\P{L})
