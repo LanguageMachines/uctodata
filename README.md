@@ -1,9 +1,23 @@
-# uctodata 0.1 CLST/ILK/CLiPS 1998 - 2016
+# uctodata 0.4 CLST/ILK/CLiPS 1998 - 2016
 	 https://github.com/LanguageMachines/uctodata/
 
 Website and documentation: https://languagemachines.github.io/ucto
 
-uctodata provides datafiles for the tokeniser ucto for several languages
+uctodata provides datafiles for the tokeniser ucto for several languages. The
+language code can be supplied to ucto using the ``-L`` paramater (e.g. ``ucto
+-L nld input.txt``):
+
+ * ``eng`` - English
+ * ``nld`` - Dutch
+ * ``deu`` - German
+ * ``fra`` - French
+ * ``ita`` - Italian
+ * ``spa`` - Spanish
+ * ``por`` - Portuguese
+ * ``rus`` - Russian
+ * ``swe`` - Swedish
+ * ``tur`` - Turkish
+ * ``fry`` - Frisian
 
 uctodata is architecture independent.
 
