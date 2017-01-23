@@ -1,4 +1,4 @@
-# uctodata 0.4 CLST/ILK/CLiPS 1998 - 2016
+# uctodata 0.4 CLST/ILK 2009 - 2016
 	 https://github.com/LanguageMachines/uctodata/
 
 Website and documentation: https://languagemachines.github.io/ucto
