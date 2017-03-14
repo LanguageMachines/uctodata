@@ -1,0 +1,104 @@
+@base <http://folia.science.ru.nl/setdefinition/uctodata/tokconfig-tur/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<#Set.tokconfig-tur>
+    a skos:Collection ;
+    skos:member <#DATE> ;
+    skos:member <#NP-COMP> ;
+    skos:member <#URL> ;
+    skos:member <#URL-WWW> ;
+    skos:member <#URL-DOMAIN> ;
+    skos:member <#E-MAIL> ;
+    skos:member <#ABBREVIATION> ;
+    skos:member <#INITIAL> ;
+    skos:member <#SMILEY> ;
+    skos:member <#REVERSE-SMILEY> ;
+    skos:member <#PUNCTUATION-MULTI> ;
+    skos:member <#NUMBER-YEAR> ;
+    skos:member <#TIME> ;
+    skos:member <#FRACNUMBER> ;
+    skos:member <#NUMBER> ;
+    skos:member <#CURRENCY> ;
+    skos:member <#WORD> ;
+    skos:member <#PUNCTUATION> ;
+    skos:member <#UNKNOWN> ;
+    skos:notation "tokconfig-tur" .
+
+<#DATE>
+    a skos:Concept ;
+    skos:notation "DATE" .
+
+<#NP-COMP>
+    a skos:Concept ;
+    skos:notation "NP-COMP" .
+
+<#URL>
+    a skos:Concept ;
+    skos:notation "URL" .
+
+<#URL-WWW>
+    a skos:Concept ;
+    skos:notation "URL-WWW" .
+
+<#URL-DOMAIN>
+    a skos:Concept ;
+    skos:notation "URL-DOMAIN" .
+
+<#E-MAIL>
+    a skos:Concept ;
+    skos:notation "E-MAIL" .
+
+<#ABBREVIATION>
+    a skos:Concept ;
+    skos:notation "ABBREVIATION" .
+
+<#INITIAL>
+    a skos:Concept ;
+    skos:notation "INITIAL" .
+
+<#SMILEY>
+    a skos:Concept ;
+    skos:notation "SMILEY" .
+
+<#REVERSE-SMILEY>
+    a skos:Concept ;
+    skos:notation "REVERSE-SMILEY" .
+
+<#PUNCTUATION-MULTI>
+    a skos:Concept ;
+    skos:notation "PUNCTUATION-MULTI" .
+
+<#NUMBER-YEAR>
+    a skos:Concept ;
+    skos:notation "NUMBER-YEAR" .
+
+<#TIME>
+    a skos:Concept ;
+    skos:notation "TIME" .
+
+<#FRACNUMBER>
+    a skos:Concept ;
+    skos:notation "FRACNUMBER" .
+
+<#NUMBER>
+    a skos:Concept ;
+    skos:notation "NUMBER" .
+
+<#CURRENCY>
+    a skos:Concept ;
+    skos:notation "CURRENCY" .
+
+<#WORD>
+    a skos:Concept ;
+    skos:notation "WORD" .
+
+<#PUNCTUATION>
+    a skos:Concept ;
+    skos:notation "PUNCTUATION" .
+
+<#UNKNOWN>
+    a skos:Concept ;
+    skos:notation "UNKNOWN" .
+

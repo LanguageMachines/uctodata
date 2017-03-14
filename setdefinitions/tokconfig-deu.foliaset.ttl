@@ -1,0 +1,159 @@
+@base <http://folia.science.ru.nl/setdefinition/uctodata/tokconfig-deu/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<#Set.tokconfig-deu>
+    a skos:Collection ;
+    skos:member <#TOKEN> ;
+    skos:member <#SUFFIX> ;
+    skos:member <#WORD-WITHSUFFIX> ;
+    skos:member <#WORD-TOKEN> ;
+    skos:member <#ABBREVIATION-KNOWN> ;
+    skos:member <#NUMBER-ORDINAL> ;
+    skos:member <#URL> ;
+    skos:member <#URL-WWW> ;
+    skos:member <#URL-DOMAIN> ;
+    skos:member <#E-MAIL> ;
+    skos:member <#WORD-PARPREFIX-PARSUFFIX> ;
+    skos:member <#WORD-PARPREFIX> ;
+    skos:member <#WORD-PARSUFFIX> ;
+    skos:member <#WORD-COMPOUND> ;
+    skos:member <#ABBREVIATION> ;
+    skos:member <#INITIALS> ;
+    skos:member <#INITIAL> ;
+    skos:member <#SMILEY> ;
+    skos:member <#REVERSE-SMILEY> ;
+    skos:member <#PUNCTUATION-MULTI> ;
+    skos:member <#DATE-REVERSE> ;
+    skos:member <#DATE> ;
+    skos:member <#NUMBER-YEAR> ;
+    skos:member <#TIME> ;
+    skos:member <#FRACNUMBER> ;
+    skos:member <#NUMBER> ;
+    skos:member <#CURRENCY> ;
+    skos:member <#WORD> ;
+    skos:member <#PUNCTUATION> ;
+    skos:member <#UNKNOWN> ;
+    skos:notation "tokconfig-deu" .
+
+<#TOKEN>
+    a skos:Concept ;
+    skos:notation "TOKEN" .
+
+<#SUFFIX>
+    a skos:Concept ;
+    skos:notation "SUFFIX" .
+
+<#WORD-WITHSUFFIX>
+    a skos:Concept ;
+    skos:notation "WORD-WITHSUFFIX" .
+
+<#WORD-TOKEN>
+    a skos:Concept ;
+    skos:notation "WORD-TOKEN" .
+
+<#ABBREVIATION-KNOWN>
+    a skos:Concept ;
+    skos:notation "ABBREVIATION-KNOWN" .
+
+<#NUMBER-ORDINAL>
+    a skos:Concept ;
+    skos:notation "NUMBER-ORDINAL" .
+
+<#URL>
+    a skos:Concept ;
+    skos:notation "URL" .
+
+<#URL-WWW>
+    a skos:Concept ;
+    skos:notation "URL-WWW" .
+
+<#URL-DOMAIN>
+    a skos:Concept ;
+    skos:notation "URL-DOMAIN" .
+
+<#E-MAIL>
+    a skos:Concept ;
+    skos:notation "E-MAIL" .
+
+<#WORD-PARPREFIX-PARSUFFIX>
+    a skos:Concept ;
+    skos:notation "WORD-PARPREFIX-PARSUFFIX" .
+
+<#WORD-PARPREFIX>
+    a skos:Concept ;
+    skos:notation "WORD-PARPREFIX" .
+
+<#WORD-PARSUFFIX>
+    a skos:Concept ;
+    skos:notation "WORD-PARSUFFIX" .
+
+<#WORD-COMPOUND>
+    a skos:Concept ;
+    skos:notation "WORD-COMPOUND" .
+
+<#ABBREVIATION>
+    a skos:Concept ;
+    skos:notation "ABBREVIATION" .
+
+<#INITIALS>
+    a skos:Concept ;
+    skos:notation "INITIALS" .
+
+<#INITIAL>
+    a skos:Concept ;
+    skos:notation "INITIAL" .
+
+<#SMILEY>
+    a skos:Concept ;
+    skos:notation "SMILEY" .
+
+<#REVERSE-SMILEY>
+    a skos:Concept ;
+    skos:notation "REVERSE-SMILEY" .
+
+<#PUNCTUATION-MULTI>
+    a skos:Concept ;
+    skos:notation "PUNCTUATION-MULTI" .
+
+<#DATE-REVERSE>
+    a skos:Concept ;
+    skos:notation "DATE-REVERSE" .
+
+<#DATE>
+    a skos:Concept ;
+    skos:notation "DATE" .
+
+<#NUMBER-YEAR>
+    a skos:Concept ;
+    skos:notation "NUMBER-YEAR" .
+
+<#TIME>
+    a skos:Concept ;
+    skos:notation "TIME" .
+
+<#FRACNUMBER>
+    a skos:Concept ;
+    skos:notation "FRACNUMBER" .
+
+<#NUMBER>
+    a skos:Concept ;
+    skos:notation "NUMBER" .
+
+<#CURRENCY>
+    a skos:Concept ;
+    skos:notation "CURRENCY" .
+
+<#WORD>
+    a skos:Concept ;
+    skos:notation "WORD" .
+
+<#PUNCTUATION>
+    a skos:Concept ;
+    skos:notation "PUNCTUATION" .
+
+<#UNKNOWN>
+    a skos:Concept ;
+    skos:notation "UNKNOWN" .
+
