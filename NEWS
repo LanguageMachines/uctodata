@@ -1,3 +1,13 @@
+0.5 [Ko vd Sloot] 18-10-2017
+ * adding slightly adapted tokenizer configuration for historical dutch
+    (a bit more conservative on splitting).
+    INL/nederlab-linguistic-enrichment/#7
+
+0.4 [Maarten van Gompel] 23-01-2017
+ * Data files are moved to share/ instead of etc/
+     (incompatible with ucto < 0.9.6)
+ * DATE pattern expanded (LanguageMachines/ucto#16)
+
 0.3.1 [Ko van der Sloot] 06-01-2017
 Bug fix release:
  * fixed install problem in debian packaging using DESTDIR
