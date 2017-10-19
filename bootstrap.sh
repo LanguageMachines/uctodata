@@ -1,6 +1,3 @@
-# $Id: bootstrap 8582 2011-02-27 11:38:10Z joostvb $
-# $URL: https://ilk.uvt.nl/svn/trunk/sources/Frog/trunk/bootstrap $
-
 # bootstrap - script to bootstrap the distribution rolling engine
 
 # usage:
@@ -20,23 +17,6 @@
 
 automake=automake
 aclocal=aclocal
-
-# if you want to autogenerate a ChangeLog form svn:
-#
-#  svn2cl, a python script, as used in the GNU Enterprise project.
-#    By jcater (Jason Cater), contributions by reinhard (Reinhard Müller).
-#    Get it from
-#    http://www.gnuenterprise.org/cgi-bin/viewcvs.cgi/*checkout*/gnue/trunk/gnue-common/utils/svn2cl .
-#    svn2cl is used in Makefile.am too.
-#
-# (Another svn2cl implementation, in perl, is at
-# http://www.contactor.se/~dast/svn/archive-2002-04/0910.shtml)
-#
-# see also toplevel Makefile.am
-
-# test -f ChangeLog || {
-#   svn log --verbose > ChangeLog
-#}
 
 # inspired by hack as used in mcl (from http://micans.org/)
 
@@ -58,9 +38,9 @@ aclocal=aclocal
       cat <<EOT
 You need the autoconf-archive Debian package, or the aclocal-archive
 RPM package.  Alternatively, you could install the GNU Autoconf Macro
-Archive's http://autoconf-archive.cryp.to/ac_path_lib.html
-as `pwd`/acinclude.m4.
+Archive: https://www.gnu.org/software/autoconf-archive/
 EOT
+      exit 1
    fi
 
 
