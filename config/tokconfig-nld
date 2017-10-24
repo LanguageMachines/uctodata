@@ -28,7 +28,7 @@ NUMBER-ORDINAL = \p{N}+-?(?i)(?: %ORDINALS% )(?:\Z|\P{Lu}|\P{Ll})$
 # the ^\p{S} prevents splitting <tag> like strings
 ABBREVIATION-KNOWN = (?:\p{P}*)?(?:\A|[^\p{L}\p{S}\.])((?:%ABBREVIATIONS%)(?:\.{0,1}))(?:\Z|\P{L})
 WORD-TOKEN =(?i)(%TOKENS%)(?:\p{P}*)?$
-WORD-WITHSUFFIX = ((?:\p{L}|\p{N}|-)+(?i)(?: %ATTACHEDSUFFIXES% ))(?:\Z)
+WORD-WITHSUFFIX = ((?:\p{L}|\p{N}|-)+(?i)(?: %ATTACHEDSUFFIXES% ))(?:\Z|\p{Po})
 WORD-INFIX-COMPOUND = ((?:\p{L}|\p{N}|-)+(?i)(?: %ATTACHEDSUFFIXES% )-(?:\p{L}+))$
 
 CURRENCY=^(\p{Sc}|%CURRENCY%)(?:\p{N}|\Z)
