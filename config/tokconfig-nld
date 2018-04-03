@@ -117,7 +117,7 @@ PUNCTUATION=\p{P}
 
 UNKNOWN=.
 
-QUOTE-SUFFIX=(\p{Lu}(?:\p{L})+(?:s['`’‘´]|x['`’‘´]))
+QUOTE-SUFFIX=^(\p{Lu}(?:\p{L})+(?:s['`’‘´]|x['`’‘´]))
 
 [PREFIXES]
 
