@@ -23,7 +23,8 @@ NUMBER-YEAR TIME FRACNUMBER NUMBER  WORD PUNCTUATION UNKNOWN
 
 [META-RULES]
 SPLITTER=%
-NUMBER-ORDINAL = \p{N}+-?(?i)(?: %ORDINALS% )(?:\Z|\P{Lu}|\P{Ll})$
+#NUMBER-ORDINAL = \p{N}+-?(?i)(?: %ORDINALS% )(?:\Z|\P{Lu}|\P{Ll})$
+NUMBER-ORDINAL =-?(?:[\.,]?\p{N}+)+-?(?i)(?: %ORDINALS% )(?:\Z|\P{Lu}|\P{Ll})$
 
 # the ^\p{S} prevents splitting <tag> like strings
 ABBREVIATION-KNOWN = (?:\p{P}*)?(?:\A|[^\p{L}\p{S}\.])((?:%ABBREVIATIONS%)(?:\.{0,1}))(?:\Z|\P{L})
@@ -56,8 +57,10 @@ WORD-PARSUFFIX=\p{L}+(?:[\p{Pc}\p{Pd}]\p{L}+)*(?:[\p{Pc}\p{Pd}]?\p{Ps}[\p{Pc}\p{
 #Ex: baby'tje
 WORD-DIMIN=[\p{L}\p{N}]+['`’‘´]tjes{0,1}
 
-#Keep dash/underscore connected parts (even if they are in parenthesis)
-WORD-COMPOUND=[\p{L}\p{N}]+(?:[\p{Pc}\p{Pd}][\p{L}\p{N}]+)+
+# Keep dash/underscore connected parts (even if they are in parenthesis)
+# examples: 17-jarigen , e-mail, AEX-index, ce-soir
+# but also 16-, ge-,
+WORD-COMPOUND=^[\p{L}\p{N}]+(?:[\p{Pc}\p{Pd}][\p{L}\p{N}]*)+
 
 #Keep quote connected parts.
 QUOTE-COMPOUND=[\p{L}\p{N}-]+(?:['`’‘´]\p{L}{1})+(?:-[\p{L}\p{N}]+)+
