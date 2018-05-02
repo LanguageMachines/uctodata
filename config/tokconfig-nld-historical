@@ -22,7 +22,7 @@ NUMBER-YEAR TIME FRACNUMBER NUMBER  WORD PUNCTUATION UNKNOWN
 
 [META-RULES]
 SPLITTER=%
-NUMBER-ORDINAL = -?(?>(?:[\.,]?\p{N}+)+)-?(?i)(?: %ORDINALS% )(?:\Z|\P{Lu}|\P{Ll})$
+NUMBER-ORDINAL = (?>(?:[\.,]?\p{N}+)+)-?(?i)(?: %ORDINALS% )(?:\Z|\P{Lu}|\P{Ll})$
 
 # the ^\p{S} prevents splitting <tag> like strings
 ABBREVIATION-KNOWN = (?:\p{P}*)?(?:\A|[^\p{L}\p{S}\.])((?:%ABBREVIATIONS%)(?:\.{0,1}))(?:\Z|\P{L})
