@@ -10,7 +10,8 @@ NUMBER-YEAR TIME FRACNUMBER NUMBER CURRENCY WORD PUNCTUATION UNKNOWN
 
 [META-RULES]
 SPLITTER=%
-NUMBER-ORDINAL = \p{N}+-?(?: %ORDINALS% )(?:\Z|\P{Lu}|\P{Ll})$
+NUMBER-ORDINAL = (?>(?:[\.,]?\p{N}+)+)-?(?i)(?: %ORDINALS% )(?:\Z|\P{Lu}|\P{Ll})$
+
 ABBREVIATION-KNOWN = (?:\p{P}*)?(?:\A|[^\p{L}\.])((?:%ABBREVIATIONS%)\.)(?:\Z|\P{L})
 #PREFIX = (?:\A|[^\p{Lu}\.]|[^\p{Ll}\.])(%PREFIXES% )(\p{L}+)
 #SUFFIX = ((?:\p{L})+)( %SUFFIXES% )(?:\Z|\P{L})
@@ -25,7 +26,7 @@ ABBREVIATION-KNOWN = (?:\p{P}*)?(?:\A|[^\p{L}\.])((?:%ABBREVIATIONS%)\.)(?:\Z|\P
 NP-COMP=\p{L}+(?:['`’‘´-]\p{L}+)+
 
 #Abbreviations with multiple periods as in <A.B.C>
-ABBREVIATION=^(\p{L}{1,3}(?:\.\p{L}{1,3})+\.?)(?:\Z|[,:;])
+ABBREVIATION=^(?:[\{\(\[\<]?)(\p{L}{1,3}(?:\.\p{L}{1,3})+\.?)(?:\Z|[,:;\}\)\]\>])
 
 #retain initials
 INITIAL=^(?:\p{Lt}|\p{Lu})\.$

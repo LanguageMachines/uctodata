@@ -22,7 +22,7 @@ NUMBER-YEAR TIME FRACNUMBER NUMBER  WORD PUNCTUATION UNKNOWN
 
 [META-RULES]
 SPLITTER=%
-NUMBER-ORDINAL = \p{N}+-?(?i)(?: %ORDINALS% )(?:\Z|\P{Lu}|\P{Ll})$
+NUMBER-ORDINAL = -?(?>(?:[\.,]?\p{N}+)+)-?(?i)(?: %ORDINALS% )(?:\Z|\P{Lu}|\P{Ll})$
 
 # the ^\p{S} prevents splitting <tag> like strings
 ABBREVIATION-KNOWN = (?:\p{P}*)?(?:\A|[^\p{L}\p{S}\.])((?:%ABBREVIATIONS%)(?:\.{0,1}))(?:\Z|\P{L})
@@ -64,8 +64,7 @@ WORD-ILLEGIBLE=[\p{L}\p{N}]*(?:\[\.+\])[\p{L}\p{N}]*
 QUOTE-COMPOUND=[\p{L}\p{N}-]+(?:['`’‘´]\p{L}{1})+(?:-[\p{L}\p{N}]+)+
 
 #Abbreviations with multiple periods: a.u.b
-ABBREVIATION=^(\p{L}{1,3}(?:\.\p{L}{1,3})+\.?)(?:\Z|[,:;])
-
+ABBREVIATION=^(?:[\{\(\[\<]?)(\p{L}{1,3}(?:\.\p{L}{1,3})+\.?)(?:\Z|[,:;\}\)\]\>])
 # a compound of a word and an abbreviation with multiple periods: bouw-c.a.o.
 COMPOUND-ABBREVIATION=^(?:\p{L}+-\p{L}{1,3}(?:\.\p{L}{1,3})+\.?)\Z
 
