@@ -1,3 +1,13 @@
+0.7  16-05-2018
+[Ko vd Sloot]
+ - tokconfig-nld-historical: typo in rule
+ - updated all languages with new ABBREVIATION and NUMBER-ORDINAL rules:
+   = accomodate ABBREVIATIONS within brackets.
+   = avoid needles backtracking in NUMBER-ORDINAL
+
+[Maarten van Gompel]
+ - Apparent bug in Italian config
+
 0.6 [Ko vd Sloot] 04-04-2018
  * several fixes for problems addressed in
    https://github.com/LanguageMachines/ucto/issues/46
