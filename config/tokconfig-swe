@@ -108,65 +108,7 @@ DM
 USD
 
 [ABBREVIATIONS]
-adr
-aug
-bl.a
-ca
-cg
-dec
-d.v.s
-dvs
-dr
-dyl
-el
-enl
-etc
-&c
-ex
-febr
-f.d
-fg.å
-f.k
-f.n
-f.v
-forts
-fr.o.m
-gm
-h
-ha
-hg
-hr
-i st.f
-jfr
-kg
-kl
-km
-lr
-m.fl
-m
-min
-min
-m.m
-mm
-mån
-ngn
-ngt
-nr
-o.dyl
-o.likn
-o.s.v
-p.g.a
-s.a.s
-s.k
-skn
-st
-t.ex
-t.o.m
-tfn
-trpt
-u.a
-vard
-v.g.v
+%include swe
 
 [EOSMARKERS]
 # Character: !
