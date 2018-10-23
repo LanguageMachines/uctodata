@@ -7,7 +7,7 @@ config_DATA = tokconfig-eng tokconfig-nld tokconfig-fra tokconfig-ita \
 	e-mail.rule smiley.rule url.rule \
 	standard-quotes.quote standard-eos.eos \
 	exotic-quotes.quote exotic-eos.eos \
-	nld_afk.abr spa.abr por.abr
+	nld_afk.abr spa.abr por.abr tur.abr
 
 configdir = $(datadir)/ucto
 
