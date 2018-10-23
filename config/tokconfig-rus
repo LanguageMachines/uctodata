@@ -83,28 +83,7 @@ UNKNOWN=.
 [CURRENCY]
 
 [ABBREVIATIONS]
-гл
-лат
-напр
-вкл
-вм
-ок
-приб
-им
-обл
-руб
-ст
-стр
-см
-шт
-тов
-пл
-США
-СЕ
-СССР
-РФ
-пер
-
+%include rus
 
 [FILTER]
 # also filter soft hyphen
