@@ -110,6 +110,9 @@ NUMBER=-?(?:[\.,]?\p{N}+)+
 #'s-Gravenhage, 's-Hertogenbosch
 GENITIVEPLACENAME=['`’‘´][sS]-\p{Lu}\p{L}+
 
+# a WORD consist of letters p{L}, non-spacing markers p{Mn} and hypens
+# (hyphens might be caught by other rules first)
+# typical Mn characters are all combining diacritics
 WORD=[\p{L}\p{Mn}\-]+
 
 PUNCTUATION=\p{P}
