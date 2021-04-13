@@ -26,6 +26,9 @@
     skos:member <#FRACNUMBER> ;
     skos:member <#NUMBER> ;
     skos:member <#CURRENCY> ;
+    skos:member <#SYMBOL> ;
+    skos:member <#PICTOGRAM> ;
+    skos:member <#EMOTICON> ;
     skos:member <#WORD> ;
     skos:member <#PUNCTUATION> ;
     skos:member <#UNKNOWN> ;
@@ -115,6 +118,18 @@
     a skos:Concept ;
     skos:notation "CURRENCY" .
 
+<#SYMBOL>
+    a skos:Concept ;
+    skos:notation "SYMBOL" .
+
+<#PICTOGRAM>
+    a skos:Concept ;
+    skos:notation "PICTOGRAM" .
+
+<#EMOTICON>
+    a skos:Concept ;
+    skos:notation "EMOTICON" .
+
 <#WORD>
     a skos:Concept ;
     skos:notation "WORD" .
@@ -126,4 +141,3 @@
 <#UNKNOWN>
     a skos:Concept ;
     skos:notation "UNKNOWN" .
-
