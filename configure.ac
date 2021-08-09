@@ -7,6 +7,18 @@ AM_INIT_AUTOMAKE([foreign])
 AC_CONFIG_SRCDIR([configure.ac])
 AC_PROG_LN_S
 
+PKG_PROG_PKG_CONFIG
+
+if test "x$PKG_CONFIG_PATH" = x; then
+    export PKG_CONFIG_PATH="$prefix/lib/pkgconfig"
+else
+    export PKG_CONFIG_PATH="$prefix/lib/pkgconfig:$PKG_CONFIG_PATH"
+fi
+
+PKG_CHECK_MODULES([ucto], [ucto >= 0.24] )
+CXXFLAGS="$folia_CFLAGS $CXXFLAGS"
+LIBS="$folia_LIBS $LIBS"
+
 AC_OUTPUT([
   Makefile
   uctodata.pc
