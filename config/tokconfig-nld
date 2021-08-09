@@ -21,6 +21,7 @@ NUMBER-YEAR TIME FRACNUMBER NUMBER  WORD PUNCTUATION UNKNOWN
 # to do PREFIXES, SUFFIXES (beide leeg nu)
 #       UNITS (grotendeels uitgecommentarieerd in de c++ code)
 
+# macro definition for a range of apostroph symbols
 %define APOS ['`’‘´]
 
 [META-RULES]
@@ -29,8 +30,14 @@ NUMBER-ORDINAL = (?>(?:[\.,]?\p{N}+)+)-?(?i)(?: %ORDINALS% )(?:\Z|\P{Lu}|\P{Ll})
 
 # the ^\p{S} prevents splitting <tag> like strings
 ABBREVIATION-KNOWN = (?:\p{P}*)?(?:\A|[^\p{L}\p{S}\.])((?:%ABBREVIATIONS%)(?:\.{0,1}))(?:\Z|\P{L})
+
+# isolated colloquial constructions like: 't ( 't klopt niet) or 'm ( ik pak 'm)
 WORD-TOKEN =(?i)(%TOKENS%)(?:\p{P}*)?$
+
+# words with plural 's like drama's. But also: SMS't, Z'n
 WORD-WITHSUFFIX = ((?:\p{L}|\p{N}|-)+(?i)(?: %ATTACHEDSUFFIXES% ))(?:\Z|\p{Po})
+
+# words with internal apostrophs, like: bird's-eye, rock-'n-roll
 WORD-INFIX-COMPOUND = ((?:\p{L}|\p{N}|-)+(?i)(?: %ATTACHEDSUFFIXES% )-(?:\p{L}+))$
 
 CURRENCY=^(\p{Sc}|%CURRENCY%)(?:\p{N}|\Z)
