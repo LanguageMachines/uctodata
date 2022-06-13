@@ -10,7 +10,7 @@ SPLITTER=%
 NUMBER-ORDINAL = (?>(?:[\.,]?\p{N}+)+)-?(?i)(?: %ORDINALS% )(?:\Z|\P{Lu}|\P{Ll})$
 ABBREVIATION-KNOWN = (?:\p{P}*)?(?:\A|[^\p{L}\.])((?:%ABBREVIATIONS%)\.)(?:\Z|\P{L})
 WORD-TOKEN =(%TOKENS%)(?:\p{P}*)?$
-PREFIX = (?:\A|[^\p{Lu}\.]|[^\p{Ll}\.])(%PREFIXES% )\p{L}+
+PREFIX = (?:\A)(%PREFIXES% )\p{L}+
 #SUFFIX = ((?:\p{L})+)( %SUFFIXES% )(?:\Z|\P{L})
 
 [RULES]

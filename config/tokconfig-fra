@@ -9,7 +9,7 @@ NUMBER-YEAR FRACNUMBER TIME NUMBER CURRENCY WORD PUNCTUATION UNKNOWN
 SPLITTER=%
 #ABBREVIATION-KNOWN = (?:\p{P}*)?(?:\A|[^\p{L}\.])(?:\A)((?:%ABBREVIATIONS%)(?:\.{0,1}))(?:\Z|\P{L})
 WORD-TOKEN =(%TOKENS%)(?:\p{P}*)?$
-PREFIX = (?:\A|[^\p{Lu}\.]|[^\p{Ll}\.])(%PREFIXES% )\p{L}+
+PREFIX = (?:\A)(%PREFIXES% )\p{L}+
 SUFFIX = (?:\A|\p{L})+( %SUFFIXES% )(?:\Z|\P{L})
 
 [RULES]
