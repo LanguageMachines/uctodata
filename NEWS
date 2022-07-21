@@ -1,3 +1,16 @@
+0.9  21-07-2022
+[Ko van der Sloot]
+  - fix for PREFIX rules in french and italian
+  - small fix to prevent loosing a character in the PREFIX rule. (see https://github.com/LanguageMachines/ucto/issues/87 ) This doesn't fix the unwanted splits though.
+  - added SYMBOL, PICTOGRAM and EMOTICON to setdefinitions
+  - relaxed the e-mail rule a bit.
+
+[Piroska Lendvai]
+  - Suggestions for German abbreviations
+
+[Antal van den Bosch]
+  - New config file for English Twitter data. Recognizes and retains #hastags and @mentions.
+
 0.8  29-11-2018
 [Ko van der Sloot]
   - separated .abr files from there main files for all Languages
