@@ -1,4 +1,4 @@
-config_DATA = tokconfig-eng tokconfig-nld tokconfig-fra tokconfig-ita \
+config_DATA = tokconfig-eng tokconfig-eng-twitter tokconfig-nld tokconfig-fra tokconfig-ita \
 	tokconfig-spa tokconfig-por tokconfig-deu tokconfig-swe \
 	tokconfig-nld-twitter tokconfig-nld-sonarchat tokconfig-tur \
 	tokconfig-nld-withplaceholder tokconfig-nld-historical tokconfig-fry \

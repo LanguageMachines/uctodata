@@ -1,3 +1,7 @@
+0.9.1  21-07-2022
+[Maarten van Gompel]
+  - New English twitter config wasn't installed properly yet 
+
 0.9  21-07-2022
 [Ko van der Sloot]
   - fix for PREFIX rules in french and italian
