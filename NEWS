@@ -1,6 +1,10 @@
+0.10  22-10-2023
+[Ko van der Sloot]
+* modernized configuration step
+
 0.9.1  21-07-2022
 [Maarten van Gompel]
-  - New English twitter config wasn't installed properly yet 
+  - New English twitter config wasn't installed properly yet
 
 0.9  21-07-2022
 [Ko van der Sloot]
