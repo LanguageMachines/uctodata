@@ -8,7 +8,7 @@ config_DATA = tokconfig-eng tokconfig-eng-twitter tokconfig-nld tokconfig-fra to
 	standard-quotes.quote standard-eos.eos \
 	exotic-quotes.quote exotic-eos.eos \
 	nld_afk.abr spa.abr por.abr tur.abr fry.abr rus.abr \
-	swe.abr fra.abr deu.abr
+	eng.abr swe.abr fra.abr deu.abr
 
 configdir = $(datadir)/ucto
 
