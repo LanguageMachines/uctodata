@@ -8,6 +8,7 @@ NUMBER-YEAR FRACNUMBER TIME NUMBER CURRENCY WORD PUNCTUATION UNKNOWN
 [META-RULES]
 SPLITTER=%
 #ABBREVIATION-KNOWN = (?:\p{P}*)?(?:\A|[^\p{L}\.])(?:\A)((?:%ABBREVIATIONS%)(?:\.{0,1}))(?:\Z|\P{L})
+ABBREVIATION-KNOWN = (?:\p{P}*)?(?:\A|[^\p{L}\.])((?:%ABBREVIATIONS%)\.)(?:\Z|\P{L})
 WORD-TOKEN =(%TOKENS%)(?:\p{P}*)?$
 PREFIX = (?:\A)(%PREFIXES% )\p{L}+
 SUFFIX = (?:\A|\p{L})+( %SUFFIXES% )(?:\Z|\P{L})
