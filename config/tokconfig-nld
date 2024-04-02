@@ -104,8 +104,8 @@ NUMBER-YEAR=(['`’‘´]\p{N}{2})(?:\P{N}|\z)
 #Times
 TIME=\p{N}{1,2}:\p{N}{1,2}(?::\p{N}{1,2})?(am|pm|AM|PM)?
 
-#retain digits, including those starting with initial period (.22), and negative numbers
-NUMBER=-?(?:[\.,]?\p{N}+)+
+#retain digits, including those starting with initial period (.22), and negative numbers and non-spacing markers
+NUMBER=-?(?:[\.,]?[\p{N}+|\p{Mn}])+
 
 #'s-Gravenhage, 's-Hertogenbosch
 GENITIVEPLACENAME=['`’‘´][sS]-\p{Lu}\p{L}+

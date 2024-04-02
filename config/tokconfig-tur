@@ -47,8 +47,8 @@ FRACNUMBER=\p{N}+(?:/\p{N}+)+
 #Times
 TIME=\p{N}{1,2}:\p{N}{1,2}(?::\p{N})?(?i:a\.?m\.?|p\.?m\.?)?
 
-#retain digits, including those starting with initial period (.22), and negative numbers
-NUMBER=-?(?:[\.,]?\p{N}+)+
+#retain digits, including those starting with initial period (.22), and negative numbers and non-spacing markers
+NUMBER=-?(?:[\.,]?[\p{N}+|\p{Mn}])+
 
 ROMAN-NUMERALS=\b[IVXivx]{1,2}\.
 
