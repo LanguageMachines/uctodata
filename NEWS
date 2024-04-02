@@ -1,3 +1,7 @@
+0.10.1  02-04-2024
+[Ko van der Sloot]
+* allow NON_SPACING_MARKERs inside NUMBERs
+
 0.10  02-04-2024
 [Ko van der Sloot]
 * modernized configuration step
