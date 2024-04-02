@@ -1,6 +1,10 @@
-0.10  22-10-2023
+0.10  02-04-2024
 [Ko van der Sloot]
 * modernized configuration step
+* French list of known abbreviations was not used at all!
+  added that
+* in English, for shouldn't be handled as an abbreviation, unless
+  with a trailing dot.
 
 0.9.1  21-07-2022
 [Maarten van Gompel]
