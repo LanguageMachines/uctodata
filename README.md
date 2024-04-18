@@ -26,9 +26,6 @@ uctodata is architecture independent.
 
 To install uctodata, first consult whether your distribution's
 package manager has an up-to-date package.
-If not, for easy installation of ucto and uctodata, it is included
-as part of our software distribution LaMachine:
-https://proycon.github.io/LaMachine .
 
 To compile and install manually from source instead:
 
