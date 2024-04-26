@@ -1,6 +1,10 @@
-0.10.1  02-04-2024
+
+0.11  26-04-2024
 [Ko van der Sloot]
-* allow NON_SPACING_MARKERs inside NUMBERs
+* allow NON_SPACING_MARKERs inside NUMBERs in all languages
+
+[Maarten van Gompel]
+* README.md: README: removed LaMachine reference
 
 0.10  02-04-2024
 [Ko van der Sloot]
